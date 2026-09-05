@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+raw data/archive (1)/
+.DS_Store
+*.joblib
+data_processed/shipsense_features.csv

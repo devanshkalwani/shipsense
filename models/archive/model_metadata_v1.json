@@ -1,0 +1,36 @@
+{
+  "features": [
+    "customer_state",
+    "primary_payment_type",
+    "total_payment_value",
+    "purchase_month",
+    "purchase_dayofweek",
+    "approval_delay_hours",
+    "item_count",
+    "distinct_sellers",
+    "total_freight",
+    "total_price",
+    "freight_pct_of_value",
+    "avg_product_weight",
+    "multi_seller"
+  ],
+  "categorical_features": [
+    "customer_state",
+    "primary_payment_type"
+  ],
+  "best_params": {
+    "num_leaves": 97,
+    "max_depth": 5,
+    "learning_rate": 0.038671377364472695,
+    "n_estimators": 175,
+    "min_child_samples": 72,
+    "subsample": 0.6962250989119287,
+    "colsample_bytree": 0.6919949161767709,
+    "objective": "binary",
+    "random_state": 42,
+    "verbose": -1,
+    "scale_pos_weight": 13.753922694221203
+  },
+  "test_auc": 0.752234646398373,
+  "test_pr_auc": 0.213658619251214
+}

@@ -1,0 +1,46 @@
+{
+  "features": [
+    "customer_state",
+    "primary_payment_type",
+    "total_payment_value",
+    "purchase_month",
+    "purchase_dayofweek",
+    "purchase_hour",
+    "is_weekend",
+    "approval_delay_hours",
+    "item_count",
+    "distinct_sellers",
+    "total_freight",
+    "total_price",
+    "freight_pct_of_value",
+    "avg_product_weight",
+    "multi_seller",
+    "ship_distance_km",
+    "seller_hist_late_rate",
+    "product_category_name"
+  ],
+  "categorical_features": [
+    "customer_state",
+    "primary_payment_type",
+    "product_category_name"
+  ],
+  "best_params": {
+    "num_leaves": 12,
+    "max_depth": 4,
+    "learning_rate": 0.04244285096253417,
+    "n_estimators": 349,
+    "min_child_samples": 182,
+    "subsample": 0.717170949700853,
+    "colsample_bytree": 0.5436448614372006,
+    "reg_alpha": 0.7027872937919531,
+    "reg_lambda": 4.590367879359531,
+    "objective": "binary",
+    "random_state": 42,
+    "verbose": -1,
+    "scale_pos_weight": 13.76865671641791
+  },
+  "test_auc": 0.758329146397082,
+  "test_pr_auc": 0.2245853062466546,
+  "cv_auc": 0.7624123447641368,
+  "notes": "v2: regularized to close train/val gap identified via learning curve diagnostic"
+}
