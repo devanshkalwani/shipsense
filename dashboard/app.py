@@ -12,12 +12,15 @@ st.set_page_config(
 inject_custom_css()
 
 # ---------- Load data ----------
+import os
+
 @st.cache_data
 def load_data():
-    df = pd.read_csv('../data_processed/dashboard_data.csv', parse_dates=['purchase_date'])
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(base_dir, '..', 'data_processed', 'dashboard_data.csv')
+    df = pd.read_csv(csv_path, parse_dates=['purchase_date'])
     df['month'] = df['purchase_date'].dt.to_period('M').astype(str)
     return df
-
 df = load_data()
 
 # ---------- Sidebar ----------
